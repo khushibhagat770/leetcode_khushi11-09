@@ -5,9 +5,10 @@ public:
         int mn = INT_MAX;
         for(int i=0;i<n;i++){
             int sum = 0;
+            int count = 0;
             for(int j=i;j<n;j++){
                 sum += nums[j];
-                int count = j-i+1;
+                count++;
                 if(count>=l && count<=r && sum>0){
                     mn = min(sum,mn);
                 } 
